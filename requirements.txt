@@ -40,7 +40,7 @@ rsa
 six
 tensorboard
 tensorboard-data-server
-tensorboard-plugin-with
+tensorboard-plugin-wit
 torch
 torchmetrics
 torchvision
