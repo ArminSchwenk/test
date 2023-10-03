@@ -12,6 +12,9 @@ dataset_switch = 1
 
 DATA_DIR = os.environ.get("DATA_DIR")
 
+if not DATA_DIR:
+    DATA_DIR = "/content/drive/MyDrive/pprojects"
+
 if dataset_switch == 0:
     DATASET_NAME = "dataset_single_layer"
     DATA_CSV = os.path.join(

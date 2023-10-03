@@ -1,4 +1,5 @@
 import torch
+import torchmetrics
 import torch.nn.functional as F
 import torch.nn as nn
 from torch.optim import AdamW
@@ -10,6 +11,8 @@ import pytorch_lightning as pl
 from datetime import datetime
 import pandas as pd
 import os
+
+
 
 class ParametersClassifier(pl.LightningModule):
     def __init__(
@@ -42,7 +45,7 @@ class ParametersClassifier(pl.LightningModule):
                     param.requires_grad = False
         self.save_hyperparameters()
 
-        self.train_acc = pl.metrics.Accuracy()
+        self.train_acc = torchmetrics.Accuracy(task="multiclass", num_classes=num_classes)
         self.train_acc0 = pl.metrics.Accuracy()
         self.train_acc1 = pl.metrics.Accuracy()
         self.train_acc2 = pl.metrics.Accuracy()
