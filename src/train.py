@@ -59,11 +59,11 @@ data = ParametersDataModule(
 
 trainer = pl.Trainer(
     num_nodes=NUM_NODES,
-    gpus=NUM_GPUS,
-    distributed_backend=ACCELERATOR,
+    #gpus=NUM_GPUS,
+    #distributed_backend=ACCELERATOR,
     max_epochs=args.epochs,
     logger=tb_logger,
-    weights_summary=None,
+    #weights_summary=None,
     precision=16,
     callbacks=[checkpoint_callback],
 )

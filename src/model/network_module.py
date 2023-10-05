@@ -46,16 +46,16 @@ class ParametersClassifier(pl.LightningModule):
         self.save_hyperparameters()
 
         self.train_acc = torchmetrics.Accuracy(task="multiclass", num_classes=num_classes)
-        self.train_acc0 = pl.metrics.Accuracy()
-        self.train_acc1 = pl.metrics.Accuracy()
-        self.train_acc2 = pl.metrics.Accuracy()
-        self.train_acc3 = pl.metrics.Accuracy()
-        self.val_acc = pl.metrics.Accuracy()
-        self.val_acc0 = pl.metrics.Accuracy()
-        self.val_acc1 = pl.metrics.Accuracy()
-        self.val_acc2 = pl.metrics.Accuracy()
-        self.val_acc3 = pl.metrics.Accuracy()
-        self.test_acc = pl.metrics.Accuracy()
+        self.train_acc0 = torchmetrics.Accuracy(task="multiclass", num_classes=num_classes)
+        self.train_acc1 = torchmetrics.Accuracy(task="multiclass", num_classes=num_classes)
+        self.train_acc2 = torchmetrics.Accuracy(task="multiclass", num_classes=num_classes)
+        self.train_acc3 = torchmetrics.Accuracy(task="multiclass", num_classes=num_classes)
+        self.val_acc = torchmetrics.Accuracy(task="multiclass", num_classes=num_classes)
+        self.val_acc0 = torchmetrics.Accuracy(task="multiclass", num_classes=num_classes)
+        self.val_acc1 = torchmetrics.Accuracy(task="multiclass", num_classes=num_classes)
+        self.val_acc2 = torchmetrics.Accuracy(task="multiclass", num_classes=num_classes)
+        self.val_acc3 = torchmetrics.Accuracy(task="multiclass", num_classes=num_classes)
+        self.test_acc = torchmetrics.Accuracy(task="multiclass", num_classes=num_classes)
 
         self.name = "ResidualAttentionClassifier"
         self.retrieve_layers = retrieve_layers
