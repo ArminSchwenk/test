@@ -118,7 +118,7 @@ class ParametersClassifier(pl.LightningModule):
             on_epoch=True,
             logger=True,
             sync_dist=self.sync_dist,
-            sync_dist_op="mean",
+            #sync_dist_op="mean",
         )
         self.log(
             "train_loss0",
@@ -126,7 +126,7 @@ class ParametersClassifier(pl.LightningModule):
             on_epoch=True,
             logger=True,
             sync_dist=self.sync_dist,
-            sync_dist_op="mean",
+            #sync_dist_op="mean",
         )
         self.log(
             "train_loss1",
@@ -134,7 +134,7 @@ class ParametersClassifier(pl.LightningModule):
             on_epoch=True,
             logger=True,
             sync_dist=self.sync_dist,
-            sync_dist_op="mean",
+            #sync_dist_op="mean",
         )
         self.log(
             "train_loss2",
@@ -142,7 +142,7 @@ class ParametersClassifier(pl.LightningModule):
             on_epoch=True,
             logger=True,
             sync_dist=self.sync_dist,
-            sync_dist_op="mean",
+            #sync_dist_op="mean",
         )
         self.log(
             "train_loss3",
@@ -150,7 +150,7 @@ class ParametersClassifier(pl.LightningModule):
             on_epoch=True,
             logger=True,
             sync_dist=self.sync_dist,
-            sync_dist_op="mean",
+            #sync_dist_op="mean",
         )
 
         self.train_acc(preds, y)
@@ -167,7 +167,7 @@ class ParametersClassifier(pl.LightningModule):
             on_epoch=True,
             logger=True,
             sync_dist=self.sync_dist,
-            sync_dist_op="mean",
+            #sync_dist_op="mean",
         )
         self.log(
             "train_acc0",
@@ -175,7 +175,7 @@ class ParametersClassifier(pl.LightningModule):
             on_epoch=True,
             logger=True,
             sync_dist=self.sync_dist,
-            sync_dist_op="mean",
+            #sync_dist_op="mean",
         )
         self.log(
             "train_acc1",
@@ -183,7 +183,7 @@ class ParametersClassifier(pl.LightningModule):
             on_epoch=True,
             logger=True,
             sync_dist=self.sync_dist,
-            sync_dist_op="mean",
+            #sync_dist_op="mean",
         )
         self.log(
             "train_acc2",
@@ -191,7 +191,7 @@ class ParametersClassifier(pl.LightningModule):
             on_epoch=True,
             logger=True,
             sync_dist=self.sync_dist,
-            sync_dist_op="mean",
+            #sync_dist_op="mean",
         )
         self.log(
             "train_acc3",
@@ -199,7 +199,7 @@ class ParametersClassifier(pl.LightningModule):
             on_epoch=True,
             logger=True,
             sync_dist=self.sync_dist,
-            sync_dist_op="mean",
+            #sync_dist_op="mean",
         )
 
         self.log(
@@ -209,7 +209,7 @@ class ParametersClassifier(pl.LightningModule):
             prog_bar=True,
             logger=True,
             sync_dist=self.sync_dist,
-            sync_dist_op="mean",
+            #sync_dist_op="mean",
         )
         return loss
 
@@ -241,7 +241,7 @@ class ParametersClassifier(pl.LightningModule):
             on_epoch=True,
             logger=True,
             sync_dist=self.sync_dist,
-            sync_dist_op="mean",
+            #sync_dist_op="mean",
         )
         self.log(
             "val_loss0",
@@ -249,7 +249,7 @@ class ParametersClassifier(pl.LightningModule):
             on_epoch=True,
             logger=True,
             sync_dist=self.sync_dist,
-            sync_dist_op="mean",
+            #sync_dist_op="mean",
         )
         self.log(
             "val_loss1",
@@ -257,7 +257,7 @@ class ParametersClassifier(pl.LightningModule):
             on_epoch=True,
             logger=True,
             sync_dist=self.sync_dist,
-            sync_dist_op="mean",
+            #sync_dist_op="mean",
         )
         self.log(
             "val_loss2",
@@ -265,7 +265,7 @@ class ParametersClassifier(pl.LightningModule):
             on_epoch=True,
             logger=True,
             sync_dist=self.sync_dist,
-            sync_dist_op="mean",
+            #sync_dist_op="mean",
         )
         self.log(
             "val_loss3",
@@ -273,7 +273,7 @@ class ParametersClassifier(pl.LightningModule):
             on_epoch=True,
             logger=True,
             sync_dist=self.sync_dist,
-            sync_dist_op="mean",
+            #sync_dist_op="mean",
         )
 
         self.val_acc(preds, y)
@@ -289,7 +289,7 @@ class ParametersClassifier(pl.LightningModule):
             on_epoch=True,
             logger=True,
             sync_dist=self.sync_dist,
-            sync_dist_op="mean",
+            #sync_dist_op="mean",
         )
         self.log(
             "val_acc0",
@@ -297,7 +297,7 @@ class ParametersClassifier(pl.LightningModule):
             on_epoch=True,
             logger=True,
             sync_dist=self.sync_dist,
-            sync_dist_op="mean",
+            #sync_dist_op="mean",
         )
         self.log(
             "val_acc1",
@@ -305,7 +305,7 @@ class ParametersClassifier(pl.LightningModule):
             on_epoch=True,
             logger=True,
             sync_dist=self.sync_dist,
-            sync_dist_op="mean",
+            #sync_dist_op="mean",
         )
         self.log(
             "val_acc2",
@@ -313,7 +313,7 @@ class ParametersClassifier(pl.LightningModule):
             on_epoch=True,
             logger=True,
             sync_dist=self.sync_dist,
-            sync_dist_op="mean",
+            #sync_dist_op="mean",
         )
         self.log(
             "val_acc3",
@@ -321,7 +321,7 @@ class ParametersClassifier(pl.LightningModule):
             on_epoch=True,
             logger=True,
             sync_dist=self.sync_dist,
-            sync_dist_op="mean",
+            #sync_dist_op="mean",
         )
         return loss
 
@@ -358,7 +358,7 @@ class ParametersClassifier(pl.LightningModule):
             on_epoch=True,
             logger=True,
             sync_dist=self.sync_dist,
-            sync_dist_op="mean",
+            #sync_dist_op="mean",
         )
         self.test_acc(preds, y)
         self.log(
@@ -368,7 +368,7 @@ class ParametersClassifier(pl.LightningModule):
             on_epoch=True,
             logger=True,
             sync_dist=self.sync_dist,
-            sync_dist_op="mean",
+            #sync_dist_op="mean",
         )
         return {"loss": loss, "preds": preds, "targets": y}
 
