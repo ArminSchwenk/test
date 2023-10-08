@@ -138,7 +138,7 @@ class ParametersDataModule(pl.LightningDataModule):
             self.train_dataset,
             batch_size=self.batch_size,
             shuffle=True,
-            num_workers=8,
+            num_workers=2,
             pin_memory=True,
         )
 
@@ -146,7 +146,7 @@ class ParametersDataModule(pl.LightningDataModule):
         return DataLoader(
             self.val_dataset,
             batch_size=self.batch_size,
-            num_workers=8,
+            num_workers=2,
             pin_memory=True,
         )
 
@@ -154,6 +154,6 @@ class ParametersDataModule(pl.LightningDataModule):
         return DataLoader(
             self.test_dataset,
             batch_size=self.batch_size,
-            num_workers=8,
+            num_workers=2,
             pin_memory=True,
         )
